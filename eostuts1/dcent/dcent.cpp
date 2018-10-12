@@ -1,7 +1,7 @@
 #include <dcent.hpp>
 
 /**
-* This file describes a lcreate profile function for decentralized design schema for EOS dev
+* This file describes a create profile function for decentralized design schema for EOS dev
 */
 
 void dcent::create(
@@ -14,7 +14,7 @@ void dcent::create(
 
   auto iter = profiles.find(username);//check if username is in use
 
-  eosio_assert(iter != profiles.end(),"account already exists"); //if user name exists stop everything
+  eosio_assert(iter == profiles.end(),"account already exists"); //if user name exists stop everything
 
   profiles.emplace(application,[&](auto & row){//create a new user profile
     row.username = username;
