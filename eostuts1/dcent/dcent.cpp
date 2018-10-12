@@ -1,7 +1,7 @@
 #include <dcent.hpp>
 
 /**
-* This file describes a login&signup function for decentralized design schema for EOS dev
+* This file describes a lcreate profile function for decentralized design schema for EOS dev
 */
 
 void dcent::create(
